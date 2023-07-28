@@ -1,11 +1,30 @@
 package com.cg.dayone;
-
-public class Basics {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hi IFET");
-
+class Person{
+	private String name;
+	private int age;
+	public String getName() {
+		return name;
 	}
-
+	public void getName(String name) {
+		this.name=name;
+	}
+	public int getAge(){
+		return age;}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
 }
+public class Basics{
+	public static void main (String[]args)
+	{
+		Person person = new Person();
+		person.getName("John");
+		person.setAge(30);
+		
+		System.out.println("Name: " +person.getName());
+		System.out.println("Age: " +person.getAge());
+		
+	}
+}
+
